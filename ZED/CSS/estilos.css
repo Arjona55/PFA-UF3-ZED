@@ -1,0 +1,300 @@
+/* general */
+
+body{
+    margin:0;
+    padding:0;
+    background-image: url("../imagenes/fondo 1.jpg");
+    font-family: Verdana;
+    color: white;
+}
+
+header{
+    background-color:#210070;
+    height: fit-content;
+    width: auto;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+#cabecera{
+    display: flex;
+    margin: 0;
+    align-items:start;
+    padding-top: 1em;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#logo{
+    margin-left: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    width: 5em;
+    height: 5em;
+}
+
+#cesta{
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    width: 3em;
+    height: 3em;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color:#210070;
+    height: fit-content;
+    width: auto;
+    margin: 1em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    width: auto;
+    height: fit-content;
+    margin:1em;
+    background-color: #210070;
+    border-radius: 1em;
+    color: white;
+}
+
+#contenido{
+    margin: 1em;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    justify-content: center;
+}
+
+#producto{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    width: 100%;
+    height: 100em;
+}
+
+#figura{
+    margin: 1em;
+    padding: 0;
+    width: 7em;
+    height: 7em;
+    border-radius: 1em;
+    border: 2px solid black
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    margin-left: 1.5em;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 1em;
+}
+
+#ulnav{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding: 0;
+}
+
+form{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.button_slide {
+    color: #FFF;
+    border: 2px solid rgb(57, 197, 174);
+    border-radius: 1em;
+    display: inline-block;
+    font-size: 8px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(57, 197, 174);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    background-color: #210070;
+    height: 4em;
+    width: 9em;
+    margin: 1em;
+}
+  
+  
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 rgb(57, 197, 174);
+}
+
+.ul_footer{
+    list-style: none;
+    font-size: 10px;
+    margin: 1em;
+    padding: 0;
+}
+
+h2{
+    margin-left: 0.5em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Productos */
+
+#producto_grande{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+#figura_grande{
+    margin: 1em;
+    padding: 0;
+    max-width: 80%;
+    height: auto;
+    width: 100%;
+    border-radius: 1em;
+    border: 2px solid black;
+}
+
+#titulo_producto{
+    font-size: 20px;
+    margin: 0;
+    margin-left: 1em;
+}
+
+#descripcion_producto{
+    width: auto;
+    margin: 1em;
+    margin-right: 3em;
+    margin-left: 1em;
+}
+
+/* login y registro */
+#login_registro{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+    padding: 0;
+    width: 100%;
+    margin-right: 4em;
+}
+
+/* cesta */
+
+.elemeto_cesta{
+    margin: 1em;
+    padding: 0;
+    margin-right: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+#compra_cesta{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 1em;
+    margin-right: 2em;
+    border-radius: 1em;
+    color: black;
+}
+
+/* Responsive */
+
+@media only screen and (min-width:420px) and (max-width:780px){
+    #figura{
+        width: 10em;
+        height: 10em;
+    }
+
+    #logo{
+        width: 7em;
+        height: 7em;
+    }
+
+    #cesta{
+        width: 5em;
+        height: 5em;
+    }
+
+    .button_slide {
+        height: 6em;
+        width: 11em;
+        font-size: 10px;
+    }
+
+    .ul_footer{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (min-width:781px){
+    #figura{
+        width: 13em;
+        height: 13em;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    #logo{
+        width: 10em;
+        height: 10em;
+    }
+
+    #cesta{
+        width: 7em;
+        height: 7em;
+    }
+
+    .ul_footer{
+        font-size: 17px;
+    }
+
+    .button_slide {
+        height: 6em;
+        width: 11em;
+        font-size: 10px;
+    }
+}
